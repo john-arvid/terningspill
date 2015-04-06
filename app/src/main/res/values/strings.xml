@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TerningSpill</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="player1">Spiller 1</string>
+    <string name="player2">Spiller 2</string>
+    <string name="ones">Enere</string>
+    <string name="twos">Toere</string>
+    <string name="threes">Treere</string>
+    <string name="fours">Firere</string>
+    <string name="fives">Femmere</string>
+    <string name="sixes">Seksere</string>
+    <string name="sum">Sum</string>
+    <string name="bonus">Bonus</string>
+    <string name="one_pair">1 par</string>
+    <string name="two_pairs">2 par</string>
+    <string name="three_similar">3 like</string>
+    <string name="four_similar">4 like</string>
+    <string name="small_straight">Liten straight</string>
+    <string name="large_straight">Stor straight</string>
+    <string name="house">Hus</string>
+    <string name="chance">Sjanse</string>
+    <string name="yatzy">Yatzy</string>
+    <string name="total">Total Sum</string>
+</resources>
