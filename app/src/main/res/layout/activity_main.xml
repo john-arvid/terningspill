@@ -4,60 +4,58 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="#000000">
+    android:background="@drawable/first_layout_yatzy">
 
 
     <EditText
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/player1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="124dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="65dp"
         android:inputType="textCapCharacters"
         android:enabled="true"
-        android:maxLength="10"
-        android:background="#ffffff"
-        />
+        android:maxLength="5"
+        android:background="@color/editTextBackground"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="15dp" />
 
     <EditText
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/player2"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
         android:inputType="textCapCharacters"
         android:enabled="true"
         android:maxLength="10"
-        android:background="#ffffff"
-        android:layout_above="@+id/textViewSmall_straight"
-        android:layout_toRightOf="@+id/player1"
-        android:layout_toEndOf="@+id/player1" />
+        android:background="@color/editTextBackground"
+        android:layout_alignBaseline="@+id/player1"
+        android:layout_alignBottom="@+id/player1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player1"
         android:id="@+id/textView1"
+        android:textColor="@color/textColor"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/player1"
-        android:layout_alignStart="@+id/player1"
-        android:layout_marginTop="45dp"
-        android:textColor="@color/textColor"/>
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginRight="106dp"
+        android:layout_marginEnd="106dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player2"
         android:id="@+id/textView2"
+        android:textColor="@color/textColor"
+        android:layout_marginRight="84dp"
+        android:layout_marginEnd="84dp"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/player2"
-        android:layout_alignStart="@+id/player2"
-        android:layout_marginTop="45dp"
-        android:textColor="@color/textColor"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,8 +65,9 @@
         android:layout_below="@+id/player1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp"
-        android:textColor="@color/textColor"/>
+        android:layout_marginTop="24dp"
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,7 +78,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="64dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +90,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="84dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -101,7 +102,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="104dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -112,7 +114,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="124dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,7 +126,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="144dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -134,7 +138,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="164dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -145,7 +150,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="184dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -156,7 +162,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="204dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -167,7 +174,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="224dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -178,7 +186,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="244dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -189,7 +198,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="264dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -200,62 +210,68 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="284dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/large_straight"
         android:id="@+id/textViewLarge_straight"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="304dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"
+        android:layout_above="@+id/textViewHouse"
+        android:layout_alignLeft="@+id/textViewHouse"
+        android:layout_alignStart="@+id/textViewHouse"
+        android:layout_marginBottom="44dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/house"
         android:id="@+id/textViewHouse"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="324dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"
+        android:layout_above="@+id/textViewChance"
+        android:layout_alignLeft="@+id/textViewChance"
+        android:layout_alignStart="@+id/textViewChance"
+        android:layout_marginBottom="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chance"
         android:id="@+id/textViewChance"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="344dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"
+        android:layout_above="@+id/textViewYatzy"
+        android:layout_alignLeft="@+id/textViewYatzy"
+        android:layout_alignStart="@+id/textViewYatzy"
+        android:layout_marginBottom="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/yatzy"
         android:id="@+id/textViewYatzy"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="364dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/textViewTotal"
+        android:layout_alignRight="@+id/textViewTwos"
+        android:layout_alignEnd="@+id/textViewTwos" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/total"
         android:id="@+id/textViewTotal"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="384dp"
-        android:textColor="@color/textColor"/>
+        android:textColor="@color/textColor"
+        android:textSize="@string/fontSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textViewYatzy"
+        android:layout_alignStart="@+id/textViewYatzy"
+        android:layout_marginBottom="52dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -268,7 +284,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -282,7 +298,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -296,7 +312,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -310,7 +326,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -324,7 +340,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -338,7 +354,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -352,7 +368,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -366,7 +382,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -380,7 +396,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -394,7 +410,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -408,7 +424,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -422,7 +438,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -436,7 +452,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -450,7 +466,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -464,7 +480,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -478,7 +494,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -492,7 +508,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -506,7 +522,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -520,7 +536,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -534,7 +550,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -548,7 +564,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -562,7 +578,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -576,7 +592,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -590,7 +606,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -604,7 +620,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -618,7 +634,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -632,7 +648,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -646,7 +662,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -660,7 +676,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -674,7 +690,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -688,7 +704,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -702,7 +718,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -716,7 +732,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -730,7 +746,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
     <EditText
@@ -744,7 +760,7 @@
         android:layout_alignStart="@+id/player1"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
 
@@ -759,7 +775,7 @@
         android:layout_alignStart="@+id/player2"
         android:maxLength="2"
         android:width="30dp"
-        android:textSize="12sp"
+        android:textSize="@string/fontSize"
         android:background="@color/editTextBackground"/>
 
 
