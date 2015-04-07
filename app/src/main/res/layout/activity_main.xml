@@ -42,8 +42,9 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/textView2"
         android:layout_toStartOf="@+id/textView2"
-        android:layout_marginRight="106dp"
-        android:layout_marginEnd="106dp" />
+        android:layout_marginRight="66dp"
+        android:layout_marginEnd="66dp"
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,11 +52,12 @@
         android:text="@string/player2"
         android:id="@+id/textView2"
         android:textColor="@color/textColor"
-        android:layout_marginRight="84dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="44dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textSize="@string/fontSize" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,7 +67,7 @@
         android:layout_below="@+id/player1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -74,10 +76,10 @@
         android:layout_height="wrap_content"
         android:text="@string/twos"
         android:id="@+id/textViewTwos"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="64dp"
+        android:layout_below="@+id/textViewOnes"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -86,10 +88,10 @@
         android:layout_height="wrap_content"
         android:text="@string/threes"
         android:id="@+id/textViewThrees"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="84dp"
+        android:layout_below="@+id/textViewTwos"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -98,10 +100,10 @@
         android:layout_height="wrap_content"
         android:text="@string/fours"
         android:id="@+id/textViewFours"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="104dp"
+        android:layout_below="@+id/textViewThrees"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -110,10 +112,10 @@
         android:layout_height="wrap_content"
         android:text="@string/fives"
         android:id="@+id/textViewFives"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="124dp"
+        android:layout_below="@+id/player1Fours"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -122,10 +124,10 @@
         android:layout_height="wrap_content"
         android:text="@string/sixes"
         android:id="@+id/textViewSixes"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="144dp"
+        android:layout_below="@+id/player1Fives"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -134,10 +136,10 @@
         android:layout_height="wrap_content"
         android:text="@string/sum"
         android:id="@+id/textViewSum"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="164dp"
+        android:layout_below="@+id/player1Sixes"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -146,10 +148,10 @@
         android:layout_height="wrap_content"
         android:text="@string/bonus"
         android:id="@+id/textViewBonus"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="184dp"
+        android:layout_below="@+id/textViewSum"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -158,10 +160,10 @@
         android:layout_height="wrap_content"
         android:text="@string/one_pair"
         android:id="@+id/textViewOne_pair"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="204dp"
+        android:layout_below="@+id/textViewBonus"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -170,10 +172,10 @@
         android:layout_height="wrap_content"
         android:text="@string/two_pairs"
         android:id="@+id/textViewTwo_pair"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="224dp"
+        android:layout_below="@+id/textViewOne_pair"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -182,10 +184,10 @@
         android:layout_height="wrap_content"
         android:text="@string/three_similar"
         android:id="@+id/textViewThree_similar"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="244dp"
+        android:layout_below="@+id/textViewTwo_pair"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -194,10 +196,10 @@
         android:layout_height="wrap_content"
         android:text="@string/four_similar"
         android:id="@+id/textViewFour_similar"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="264dp"
+        android:layout_below="@+id/textViewThree_similar"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -206,10 +208,10 @@
         android:layout_height="wrap_content"
         android:text="@string/small_straight"
         android:id="@+id/textViewSmall_straight"
-        android:layout_below="@+id/player1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="284dp"
+        android:layout_below="@+id/textViewFour_similar"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
         android:textSize="@string/fontSize"/>
 
@@ -218,60 +220,60 @@
         android:layout_height="wrap_content"
         android:text="@string/large_straight"
         android:id="@+id/textViewLarge_straight"
+        android:layout_below="@+id/textViewSmall_straight"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
-        android:textSize="@string/fontSize"
-        android:layout_above="@+id/textViewHouse"
-        android:layout_alignLeft="@+id/textViewHouse"
-        android:layout_alignStart="@+id/textViewHouse"
-        android:layout_marginBottom="44dp" />
+        android:textSize="@string/fontSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/house"
         android:id="@+id/textViewHouse"
+        android:layout_below="@+id/textViewLarge_straight"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
-        android:textSize="@string/fontSize"
-        android:layout_above="@+id/textViewChance"
-        android:layout_alignLeft="@+id/textViewChance"
-        android:layout_alignStart="@+id/textViewChance"
-        android:layout_marginBottom="40dp" />
+        android:textSize="@string/fontSize"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chance"
         android:id="@+id/textViewChance"
+        android:layout_below="@+id/textViewHouse"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
-        android:textSize="@string/fontSize"
-        android:layout_above="@+id/textViewYatzy"
-        android:layout_alignLeft="@+id/textViewYatzy"
-        android:layout_alignStart="@+id/textViewYatzy"
-        android:layout_marginBottom="40dp" />
+        android:textSize="@string/fontSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/yatzy"
         android:id="@+id/textViewYatzy"
+        android:layout_below="@+id/textViewChance"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
-        android:textSize="@string/fontSize"
-        android:layout_marginBottom="42dp"
-        android:layout_above="@+id/textViewTotal"
-        android:layout_alignRight="@+id/textViewTwos"
-        android:layout_alignEnd="@+id/textViewTwos" />
+        android:textSize="@string/fontSize" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/total"
         android:id="@+id/textViewTotal"
+        android:layout_below="@+id/textViewYatzy"
+        android:layout_alignLeft="@+id/textViewOnes"
+        android:layout_alignStart="@+id/textViewOnes"
+        android:layout_marginTop="@dimen/textView_top_margin"
         android:textColor="@color/textColor"
-        android:textSize="@string/fontSize"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textViewYatzy"
-        android:layout_alignStart="@+id/textViewYatzy"
-        android:layout_marginBottom="52dp" />
+        android:textSize="@string/fontSize"/>
 
     <EditText
         android:layout_width="wrap_content"
